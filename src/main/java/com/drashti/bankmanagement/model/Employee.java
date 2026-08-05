@@ -57,6 +57,10 @@ public class Employee {
 //        this.password = password;
 //    }
 
+    public void updatePassword(String password) {
+        this.password = password;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -67,7 +71,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        StringBuilder  sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
         sb.append("Employee ID: ")
                 .append(employeeId)
