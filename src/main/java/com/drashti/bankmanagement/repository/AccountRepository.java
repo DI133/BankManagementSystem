@@ -30,7 +30,7 @@ public class AccountRepository {
     }
 
     public List<Account> findByCustomerId(String customerId) {
-        ArrayList<Account> accs = new ArrayList<>();
+        List<Account> accs = new ArrayList<>();
         for(Account account :  accounts.values()) {
             if(account.getCustomer().getCustomerId().equals(customerId))
                 accs.add(account);
